@@ -87,18 +87,13 @@ changeToYellowgreen.addEventListener("click", yellowgreenBackground);
 document.addEventListener("keydown", (e) => {
   if (e.key === "1") {
     darkgreyBackground();
-    document.getElementById("darkgrey").checked = true;
   } else if (e.key === "2") {
     coralBackground();
-    document.getElementById("coral").checked = true;
   } else if (e.key === "3") {
     turquoiseBackground();
-    document.getElementById("turquoise").checked = true;
   } else if (e.key === "4") {
     purpleBackground();
-    document.getElementById("purple").checked = true;
   } else if (e.key === "5") {
     yellowgreenBackground();
-    document.getElementById("yellowgreen").checked = true;
   }
 });
