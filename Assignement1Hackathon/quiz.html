@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <title>Victor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <img id="victorheader" src="images/victor.jpg" title="Victor" />
+
+      <header>V I C T O R</header>
+      <nav>
+        <ul>
+          <li><a href="/index.html" title="Home">Home</a></li>
+          <li><a href="/media.html" title="Media">Media</a></li>
+          <li><a class="active" href="quiz.html" title="Quiz">Quiz</a></li>
+          <li><a href="/contact.html" title="Contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <!--Quiz-->
+        <h1>De grote Victor quiz!</h1>
+
+        <form name="quiz" method="POST" data-netlify="true">
+          <p>Welke kleuren vacht heeft Victor?</p>
+
+          <input type="color" id="kleur1" name="kleur1" required />
+          <input type="color" id="kleur2" name="kleur2" required />
+
+          <p>
+            <label for="geboortedatum"
+              >Wat is de geschatte geboortedatum van Victor?</label
+            >
+          </p>
+
+          <input
+            type="date"
+            id="geboortedatum"
+            name="geboortedatum"
+            min="2002-01-01"
+            max="2018-12-31"
+            required
+          />
+
+          <p>Hoe heette de poes die samen met Victor geadopteerd is?</p>
+          <input type="radio" id="cleo" name="poes" value="cleo" />
+          <label for="html">Cleo</label><br />
+          <input type="radio" id="chloe" name="poes" value="chloe" />
+          <label for="css">Chloe</label><br />
+          <input type="radio" id="nora" name="poes" value="nora" />
+          <label for="javascript">Nora</label>
+
+          <p>
+            <input
+              type="checkbox"
+              id="algemenevoorwaarden"
+              name="algemenevoorwaarden"
+              required
+            /><label for="algemenevoorwaarden">
+              Ik ga akkoord met de
+              <a
+                href="https://nl.wikipedia.org/wiki/Algemene_voorwaarden_(Nederland)"
+                target="_blank"
+                title="Algemene voorwaarden"
+                alt="Algemene voorwaarden"
+                >algemene voorwaarden</a
+              >.</label
+            >
+          </p>
+
+          <input type="submit" />
+        </form>
+      </main>
+
+      <aside>
+        <h1>L i n k s</h1>
+        <p>
+          <a
+            href="https://www.dierenbescherming.nl/dierenasiel/dierentehuis-de-hof-van-ede"
+            target="_blank"
+            title="Website dierentehuis Hof van Ede"
+            alt="Dierentehuis Hof van Ede"
+            >Dierentehuis Ede</a
+          >:<br />
+          het asiel waar Victor vandaan komt.
+        </p>
+
+        <p>
+          <img
+            src="images/dierenbescherming.png"
+            title="Logo dierenbescherming"
+            width="70px"
+            height="auto"
+          /><br />
+          <a
+            href="https://www.dierenbescherming.nl/"
+            target="_blank"
+            title="Website dierenbescherming"
+            alt="Dierenbescherming"
+            >Dierenbescherming</a
+          >
+        </p>
+      </aside>
+
+      <footer>Deze website is gemaakt door Elsa Jansen</footer>
+    </div>
+  </body>
+</html>
